@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>liyinchuan</title>
+		<meta name="Keywords" content="关键词,关键词,关键词"/> -->
+                <title>W3.CSS Template</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Lato", sans-serif;
+            }
+
+            body,
+            html {
+                height: 100%;
+                color: #000;
+                line-height: 1.8;
+            }
+
+            /* Create a Parallax Effect */
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            /* First image (Logo. Full height) */
+            .bgimg-1 {
+                background-image: url('columbia2.jpg');
+                min-height: 100%;
+            }
+
+            /* Second image (Portfolio) */
+            .bgimg-2 {
+                background-image: url("columbia1.jpg");
+                min-height: 400px;
+            }
+
+            /* Third image (Contact) */
+            .bgimg-3 {
+                background-image: url("columbia4.jpg");
+                min-height: 400px;
+            }
+
+            .w3-wide {
+                letter-spacing: 10px;
+            }
+
+            .w3-hover-opacity {
+                cursor: pointer;
+            }
+
+            /* Turn off parallax scrolling for tablets and phones */
+            @media only screen and (max-device-width: 1600px) {
+
+                .bgimg-1,
+                .bgimg-2,
+                .bgimg-3 {
+                    background-attachment: scroll;
+                    min-height: 400px;
+                }
+            }
+        </style>
+	</head>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+            <a href="project.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Research</a>
+            <a href="pulication.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book"></i> Publications</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Contact</a>
+            
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="project.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Research</a>
+            <a href="pulication.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Publications</a>
+            <a href="contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
+            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="PUBLICATION">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">PUBLICATION </span>
+        </div>
+    </div>
+
+    <div class="w3-content w3-container w3-padding-64">
+        <h3 class="w3-center">Publications</h3>
+        <p><em>I'm interested in artificial intelligence (e.g. reinforcement Learning, federated Learning, sparse learning) and its applications in signal processing and finance.<br></em></p><br>
+
+
+        <h4>Preprints (*Equal Contribution):</h4></p>
+        <ol>
+
+        <p>
+        <li><strong>Anonymous Paper (related to Reinforcement Learning)</strong>
+        <br>
+        Haozhi Wang*, <strong>Yinchuan Li*</strong>, yunfeng shao, Jianye HAO, Qing Wang
+        <br>
+        <em>submitted to NeurIPS 2022</em>
+        </p>
+
+        <p>
+        <li><strong>Anonymous Paper (related to Causal Discovery)</strong>
+        <br>
+        Wenqian Li*, <strong>Yinchuan Li*</strong>, Shengyu Zhu, yunfeng shao, Jianye HAO, Yan Pang
+        <br>
+        <em>submitted to NeurIPS 2022</em>
+        </p>
+
+        <p>
+        <li><strong>Anonymous Paper (related to Federated Learning)</strong>
+        <br>
+        Xin-Chun Li, Wen-shu Fan, Shaoming Song, <strong>Yinchuan Li</strong>, bingshuai Li, yunfeng shao, De-Chuan Zhan
+        <br>
+        <em>submitted to NeurIPS 2022</em>
+        </p>
+
+        <p>
+        <li><strong>Anonymous Paper (related to Domain Adaptation)</strong>
+        <br>
+        Didi zhu*, <strong>Yinchuan Li*</strong>, Junkun Yuan, Zexi Li, Kun Kuang, Yunfeng Shao, Chao Wu
+        <br>
+        <em>submitted to ECCV 2022</em>
+        </p>
+ 
+        <p>
+        <li><strong>Sparse Personalized Federated Learning Via Maximizing Correlation</strong>
+        <br>
+        Xiaofeng Liu*, <strong>Yinchuan Li*</strong>, Xu Zhang, Yunfeng Shao, Qing Wang, Yanhui Geng
+        <br>
+        <em>submitted to IEEE Transactions on Neural Networks and Learning Systems</em> | <a style="color: #447ec9" href="https://arxiv.org/pdf/2107.05330.pdf">paper</a>
+        </p>
+
+        <p>
+        <li><strong>Structured Directional Pruning via Perturbation Orthogonal Projection</strong>
+        <br>
+        Xiaofeng Liu*, <strong>Yinchuan Li*</strong>, Yunfeng Shao, Qing Wang, Yanhui Geng
+        <br>
+        <em>submitted to IEEE Transactions on Neural Networks and Learning Systems</em> | <a style="color: #447ec9" href="https://arxiv.org/pdf/2107.05328.pdf">paper</a>
+        </p>
+
+        <p>
+        <li><strong>Sparse Federated Learning with Hierarchical Personalization Models</strong>
+        <br>
+        Xiaofeng Liu*, <strong>Yinchuan Li*</strong>, Yunfeng Shao, Qing Wang
+        <br>
+        <em>submitted to IEEE Journal of Selected Topics in Signal Processing</em> | <a style="color: #447ec9" href="https://arxiv.org/pdf/2203.13517.pdf">paper</a>
+        </p>
+
+        <p>
+        <li><strong>Mining Latent Relationships among Clients: Peer-to-peer Federated Learning with Adaptive Neighbor Matching</strong>
+        <br>
+        Zexi Li, Jiaxun Lu, Shuang Luo, Didi Zhu, Yunfeng Shao, <strong>Yinchuan Li</strong>, Zhimeng Zhang, Chao Wu
+        <br>
+        <em>submitted to IEEE Transactions on Big Data</em> | <a style="color: #447ec9" href="https://arxiv.org/pdf/2203.12285.pdf">paper</a>
+        </p>
+        <p>
+        <li><strong>Tensor Generalized Approximate Message Passing</strong>
+        <br>
+        <strong>Yinchuan Li</strong>, Xiaodong Wang
+        <br>
+        <em>submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence</em>
+        </p>
+        
+
+        </ol>
+
+
+        <h4>Conference Papers (*Equal Contribution):</h4></p>
+        <ol>
+        <p>
+        <li><strong>Personalized Federated Learning via Variational Bayesian Inference</strong>
+        <br>
+        Xu Zhang*, <strong>Yinchuan Li*</strong>, Wenpeng Li, Kaiyang Guo, Yunfeng Shao
+        <br>
+        <em>ICML</em> 2022 | <a style="color: #447ec9" href="https://icml.cc/">paper</a>
+        </p>
+        <p>
+        <li><strong>S2RL: Do We Really Need to Perceive All States in Deep Multi-Agent Reinforcement Learning?</strong>
+        <br>
+        Shuang Luo*, <strong>Yinchuan Li*</strong>, Jiahui Li, Kun Kuang, Furui Liu, Yunfeng Shao, Chao Wu
+        <br>
+        <em>SIGKDD</em> 2022 | <a style="color: #447ec9" href="https://www.kdd.org/">paper</a>
+        </p>
+        <p>
+        <li><strong>Federated Learning with Position-Aware Neurons</strong>
+        <br>
+        Xinchun Li, Yichu Xu, Shaoming Song, Bingshuai Li, <strong>Yinchuan Li</strong>, Yunfeng Shao, Dechuan Zhan
+        <br>
+        <em>CVPR</em> 2022 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2203.14666.pdf">paper</a>
+        </p>
+        <p>
+        <li><strong>Communication Reducing Quantization for Federated Learning with Local Differential Privacy Mechanism</strong>
+        <br>
+        Huixuan Zong, Qing Wang, Xiaofeng Liu, <strong>Yinchuan Li</strong>, Yunfeng Shao
+        <br>
+        <em>IEEE/CIC International Conference on Communications in China (ICCC)</em> 2021 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/9580315/">paper</a>
+        </p>
+        <p>
+        <li><strong>Unfolded Deep Neural Network (UDNN) for High Mobility Channel Estimation</strong>
+        <br>
+        <strong>Yinchuan Li</strong>, Xiaodong Wang, Robert L Olesen
+        <br>
+        <em>IEEE Wireless Communications and Networking Conference (WCNC)</em> 2021 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/9417560/">paper</a>
+        </p>
+        <p>
+        <li><strong>Compressive Multidimensional Harmonic Retrieval with Prior Knowledge </strong><a style="color: #447ec9">[Excellent Paper Award, TOP 5/643]</a>
+        <br>
+        <strong>Yinchuan Li</strong>, Xu Zhang, Zegang Ding, Xiaodong Wang
+        <br>
+        <em>IEEE International Conference on Signal, Information and Data Processing</em> 2019 | <a style="color: #447ec9" href="https://arxiv.org/pdf/1904.11404">paper</a>
+        </p>
+        <p>
+        <li><strong>Optimistic Bull or Pessimistic Bear: Adaptive Deep Reinforcement Learning for Stock Portfolio Allocation</strong>
+        <br>
+        Xinyi Li*, <strong>Yinchuan Li*</strong>, Yuancheng Zhan, Xiao-Yang Liu
+        <br>
+        <em>ICML Workshop on AI in Finance</em> 2019 | <a style="color: #447ec9" href="https://arxiv.org/pdf/1907.01503.pdf">paper</a>
+        </p>
+        <p>
+        <li><strong>Risk management via anomaly circumvent: Mnemonic deep learning for midterm stock prediction</strong>
+        <br>
+        Xinyi Li*, <strong>Yinchuan Li*</strong>, Xiao-Yang Liu, Christina Dan Wang
+        <br>
+        <em>SIGKDD Workshop on Anomaly Detection in Finance</em> 2019 | <a style="color: #447ec9" href="https://arxiv.org/pdf/1908.01112.pdf">paper</a>
+        </p>
+        <p>
+        <li><strong>DP-LSTM: Differential Privacy-inspired LSTM for Stock Prediction Using Financial News</strong>
+        <br>
+        Xinyi Li, <strong>Yinchuan Li</strong>, Hongyang Yang, Liuqing Yang, Xiao-Yang Liu
+        <br>
+        <em>NeurIPS Workshop on Robust AI in Financial Services</em> 2019 | <a style="color: #447ec9" href="https://arxiv.org/pdf/1912.10806.pdf">paper</a>
+        </p>
+        <p>
+        <li><strong>Price prediction of cryptocurrency: an empirical study</strong>
+        <br>
+        Liuqing Yang, Xiao-Yang Liu, Xinyi Li, <strong>Yinchuan Li</strong>
+        <br>
+        <em>International Conference on Smart Blockchain</em> 2019 | <a style="color: #447ec9" href="https://link.springer.com/chapter/10.1007/978-3-030-34083-4_13">paper</a>
+        </p>
+
+        </ol>
+        
+
+        <h4>Journal Papers (<sup>&#8224</sup>Corresponding Author):</h4></p>
+        <ol>
+        <p>
+        <li><strong>ADMM-Net for Communication Interference Removal in Stepped-Frequency Radar</strong>
+        <br>
+        Jeremy Johnston, <strong>Yinchuan Li<sup>&#8224</sup></strong>, Marco Lops, Xiaodong Wang
+        <br>
+        <em>IEEE Transactions on Signal Processing, 2020</em> | <a style="color: #447ec9" href="https://arxiv.org/pdf/2009.12651.pdf">paper</a>
+        </p>
+        <p>
+        <li><strong>SAR parametric super-resolution image reconstruction methods based on ADMM and deep neural network</strong>
+        <br>
+        Yangkai Wei, <strong>Yinchuan Li</strong>, Zegang Ding, Yan Wang, Tao Zeng, Teng Long
+        <br>
+        <em>IEEE Transactions on Geoscience and Remote Sensing, 2020</em> | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/9340592">paper</a>
+        </p>
+        <p>
+        <li><strong>Parametric translational compensation for ISAR imaging based on cascaded subaperture integration with application to asteroid imaging</strong>
+        <br>
+        Zegang Ding, Siyuan Liu, <strong>Yinchuan Li<sup>&#8224</sup></strong>, Pengjie You, Xu Zhou
+        <br>
+        <em>IEEE Transactions on Geoscience and Remote Sensing, 2020</em> | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/9306886">paper</a>
+        </p>
+        <p>
+        <li><strong>Multidimensional Spectral Super-Resolution With Prior Knowledge With Application to High Mobility Channel Estimation</strong>
+        <br>
+        <strong>Yinchuan Li</strong>, Xiaodong Wang, Zegang Ding
+        <br>
+        <em>IEEE Journal on Selected Areas in Communications, 2019</em> | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/9131691">paper</a>
+        </p>
+        <p>
+        <li><strong>Interference removal for radar/communication co-existence: The random scattering case</strong>
+        <br>
+        <strong>Yinchuan Li</strong>, Le Zheng, Marco Lops, Xiaodong Wang
+        <br>
+        <em>IEEE Transactions on Wireless Communications, 2019</em> | <a style="color: #447ec9" href="https://arxiv.org/pdf/1902.03436.pdf">paper</a>
+        </p>
+        <p>
+        <li><strong>Multi-target position and velocity estimation using OFDM communication signals</strong>
+        <br>
+        <strong>Yinchuan Li</strong>, Xiaodong Wang, Zegang Ding
+        <br>
+        <em>IEEE Transactions on Communications, 2019</em> | <a style="color: #447ec9" href="https://arxiv.org/pdf/1902.05654.pdf">paper</a>
+        </p>
+        <p>
+        <li><strong>Spectrum recovery for clutter removal in penetrating radar imaging</strong>
+        <br>
+        <strong>Yinchuan Li</strong>, Xiaodong Wang, Zegang Ding, Xu Zhang, Yin Xiang, Xiaopeng Yang
+        <br>
+        <em>IEEE Transactions on Geoscience and Remote Sensing, 2019</em> | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/8708969">paper</a>
+        </p>
+        <p>
+        <li><strong>Near-field phase cross correlation focusing imaging and parameter estimation for penetrating radar</strong>
+        <br>
+        Zegang Ding, <strong>Yinchuan Li</strong>, Wei Liu, Yin Xiang, Yikun Zhao, Haibo Liu, Tao Zeng, Teng Long
+        <br>
+        <em>IEEE Transactions on Geoscience and Remote Sensing, 2019</em> | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/8892678">paper</a>
+        </p>
+        <p>
+        <li><strong>Multi-Angle SAR Sparse Image Reconstruction With Improved Attributed Scattering Model</strong>
+        <br>
+        Yangkai Wei, <strong>Yinchuan Li</strong>, Xinliang Chen, Zegang Ding
+        <br>
+        <em>IEEE Geoscience and Remote Sensing Letters, 2019</em> | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/8864096">paper</a>
+        </p>
+        <p>
+        <li><strong>Three-dimensional optimal focusing imaging algorithm for wall-penetrating radar</strong>
+        <br>
+        <strong>Yinchuan Li</strong>, Yikun Zhao, Yin Xiang, Zegang Ding, Haibo Liu, Quanhua Liu
+        <br>
+        <em>The Journal of Engineering, 2019</em> | <a style="color: #447ec9" href="https://digital-library.theiet.org/content/journals/10.1049/joe.2019.0044">paper</a>
+        </p>
+        <p>
+        <li><strong>Multi-path suppression algorithm for through-the-wall imaging</strong>
+        <br>
+        Yikun Zhao, Wenfu Yang, <strong>Yinchuan Li</strong>, Yin Xiang, Zegang Ding
+        <br>
+        <em>The Journal of Engineering, 2019</em> | <a style="color: #447ec9" href="https://digital-library.theiet.org/content/journals/10.1049/joe.2019.0126">paper</a>
+        </p>
+        
+
+        </ol>
+
+
+    </div>
+
+<!--con end-->
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"3","bdPos":"left","bdTop":"250"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/my.js"></script>
+</body>
+</html>

@@ -1,0 +1,439 @@
+ <!doctype html>
+<html>
+	<head>
+		<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>liyinchuan</title>
+		<meta name="Keywords" content="关键词,关键词,关键词"/> -->
+                <title>W3.CSS Template</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Lato", sans-serif;
+            }
+
+            body,
+            html {
+                height: 100%;
+                color: #000;
+                line-height: 1.8;
+            }
+
+            /* Create a Parallax Effect */
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            /* First image (Logo. Full height) */
+            .bgimg-1 {
+                background-image: url('photo5.jpg');
+                min-height: 100%;
+            }
+
+
+            /* Four image  */
+            .image-box {
+                width: 360px;
+                float: left;
+                padding-top:25px;
+                padding-right:25px;
+            }
+
+            .w3-wide {
+                letter-spacing: 10px;
+            }
+
+            .w3-hover-opacity {
+                cursor: pointer;
+            }
+
+            /* Turn off parallax scrolling for tablets and phones */
+            @media only screen and (max-device-width: 1600px) {
+
+                .bgimg-1,
+                .bgimg-2,
+                .bgimg-3 {
+                    background-attachment: scroll;
+                    min-height: 400px;
+                }
+            }
+        </style>
+	</head>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+            <a href="project.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Research</a>
+            <a href="pulication.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book"></i> Publications</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Contact</a>
+            
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="project.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Research</a>
+            <a href="pulication.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Publications</a>
+            <a href="contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
+            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="PUBLICATION">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">RESEARCH </span>
+        </div>
+    </div>
+
+    <div class="w3-content w3-container w3-padding-64">
+
+        <h3 class="w3-center">Federated Learning</h3>
+        
+        <div class="w3-row">
+                <!-- <img src="S2RL.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
+                    width="333" height="200"> -->
+                <img class='image-box' src="FedBayes.jpg">
+            <!-- Hide this text on small devices -->
+            <div>
+        <!-- <p class="w3-center"><em>I love photography</em></p> -->
+        <p style='text-align:justify'>Federated learning faces huge challenges from model overfitting 
+            due to the lack of data and statistical diversity among clients. To address these challenges, 
+            this paper proposes a novel personalized federated learning method via Bayesian variational inference named pFedBayes. 
+            To alleviate the overfitting, weight uncertainty is introduced to neural networks for clients and the server. 
+            To achieve personalization, each client updates its local distribution parameters by balancing 
+            its construction error over private data and its KL divergence with global distribution from the server. 
+            Theoretical analysis gives an upper bound of averaged generalization error and illustrates that the convergence rate
+             of the generalization error is minimax optimal up to a logarithmic factor. 
+             Experiments show that the proposed method outperforms other advanced personalized methods on personalized models, 
+             e.g., pFedBayes respectively outperforms other SOTA algorithms by 1.69%, 0.70% and 12.43% on MNIST, 
+             FMNIST and CIFAR-10 under non-i.i.d. limited data.</p>
+            </div>
+
+        <p><strong>Related Publications:</strong><br>
+        <li>Personalized Federated Learning via Variational Bayesian Inference
+        <br>
+        Xu Zhang*, <strong>Yinchuan Li*</strong>, Wenpeng Li, Kaiyang Guo, Yunfeng Shao
+        <br>
+        <em>ICML</em> 2022 | <a style="color: #447ec9" href="https://icml.cc/">paper</a>
+        </p>
+        <p>
+        <li>Federated Learning with Position-Aware Neurons
+        <br>
+        Xinchun Li, Yichu Xu, Shaoming Song, Bingshuai Li, <strong>Yinchuan Li</strong>, Yunfeng Shao, Dechuan Zhan
+        <br>
+        <em>CVPR</em> 2022 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2203.14666.pdf">paper</a>
+        </p>
+
+        <p>
+        <li>Sparse Personalized Federated Learning Via Maximizing Correlation
+        <br>
+        Xiaofeng Liu*, <strong>Yinchuan Li*</strong>, Xu Zhang, Yunfeng Shao, Qing Wang, Yanhui Geng
+        <br>
+        <em>submitted to IEEE Transactions on Neural Networks and Learning Systems</em> | <a style="color: #447ec9" href="https://arxiv.org/pdf/2107.05330.pdf">paper</a>
+        </p>
+
+        <p>
+        <li>Sparse Federated Learning with Hierarchical Personalization Models
+        <br>
+        Xiaofeng Liu*, <strong>Yinchuan Li*</strong>, Yunfeng Shao, Qing Wang
+        <br>
+        <em>submitted to IEEE Journal of Selected Topics in Signal Processing</em> | <a style="color: #447ec9" href="https://arxiv.org/pdf/2203.13517.pdf">paper</a>
+        </p>
+
+        <p>
+        <li>Mining Latent Relationships among Clients: Peer-to-peer Federated Learning with Adaptive Neighbor Matching
+        <br>
+        Zexi Li, Jiaxun Lu, Shuang Luo, Didi Zhu, Yunfeng Shao, <strong>Yinchuan Li</strong>, Zhimeng Zhang, Chao Wu
+        <br>
+        <em>submitted to IEEE Transactions on Big Data</em> | <a style="color: #447ec9" href="https://arxiv.org/pdf/2203.12285.pdf">paper</a>
+        </p>
+
+        <p>
+        <li>Communication Reducing Quantization for Federated Learning with Local Differential Privacy Mechanism
+        <br>
+        Huixuan Zong, Qing Wang, Xiaofeng Liu, <strong>Yinchuan Li</strong>, Yunfeng Shao
+        <br>
+        <em>IEEE/CIC International Conference on Communications in China (ICCC)</em> 2021 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/9580315/">paper</a>
+        </p>
+        
+        </div>
+
+        <h3 class="w3-center">Reinforcement Learning</h3>
+        
+        <div class="w3-row">
+                <!-- <img src="S2RL.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
+                    width="333" height="200"> -->
+                <img class='image-box' src="S2RL.jpg">
+            <!-- Hide this text on small devices -->
+            <div>
+        <!-- <p class="w3-center"><em>I love photography</em></p> -->
+        <p style='text-align:justify'>Collaborative multi-agent reinforcement learning (MARL) has been 
+            widely used in many practical applications, where each agent makes 
+            a decision based on its own observation. Most mainstream methods 
+            treat each local observation as an entirety when modeling the decentralized local utility functions. However, they ignore the fact that 
+            local observation information can be further divided into several 
+            entities, and only part of the entities is helpful to model inference. 
+            Moreover, the importance of different entities may change over 
+            time. To improve the performance of decentralized policies, the 
+            attention mechanism is used to capture features of local information. Nevertheless, existing attention models rely on dense fully 
+            connected graphs and cannot better perceive important states. To 
+            this end, we propose a sparse state based MARL (S2RL) framework, 
+            which utilizes a sparse attention mechanism to discard irrelevant information in local observations. 
+            The local utility functions are estimated through the self-attention and sparse attention mechanisms separately, 
+            then are combined into a standard joint value function and auxiliary joint value function in the central critic. 
+            We design the S2RL framework as a plug-and-play module, making it general enough to be applied to various methods. 
+            Extensive experiments on StarCraft II show that S2RL can significantly improve the performance of many state-of-the-art methods.</p>
+            </div>
+
+        <p><strong>Related Publications:</strong><br>
+        <li>S2RL: Do We Really Need to Perceive All States in Deep Multi-Agent Reinforcement Learning?
+        <br>
+        Shuang Luo*, <strong>Yinchuan Li*</strong>, Jiahui Li, Kun Kuang, Furui Liu, Yunfeng Shao, Chao Wu
+        <br>
+        <em>SIGKDD</em> 2022 | <a style="color: #447ec9" href="https://www.kdd.org/">paper</a>
+        </p>
+        <p>
+        <li>Optimistic Bull or Pessimistic Bear: Adaptive Deep Reinforcement Learning for Stock Portfolio Allocation
+        <br>
+        Xinyi Li*, <strong>Yinchuan Li*</strong>, Yuancheng Zhan, Xiao-Yang Liu
+        <br>
+        <em>ICML Workshop on AI in Finance</em> 2019 | <a style="color: #447ec9" href="https://arxiv.org/pdf/1907.01503.pdf">paper</a>
+        </p>
+
+        </div>
+
+
+        <h3 class="w3-center">Sparse Learning & Compressed Sensing</h3>
+        
+        <div class="w3-row">
+                <!-- <img src="S2RL.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
+                    width="333" height="200"> -->
+                <img class='image-box' src="SDP.jpg">
+            <!-- Hide this text on small devices -->
+            <div>
+        <!-- <p class="w3-center"><em>I love photography</em></p> -->
+        <p style='text-align:justify'>Structured pruning is an effective compression technique to reduce the computation of neural networks, 
+            which is usually achieved by adding perturbations to reduce network parameters at the cost of slightly  increasing training loss. 
+            A more reasonable approach is to find a sparse minimizer along the flat minimum valley found by optimizers, i.e. stochastic gradient descent, 
+            which keeps the training loss constant. To achieve this goal, we propose the structured directional pruning based on 
+            orthogonal projecting the perturbations onto the flat minimum valley.  We also propose a fast solver AltSDP and further prove 
+            that it achieves directional pruning asymptotically after sufficient training. Experiments using VGG-Net and ResNet on CIFAR-10 
+            and CIFAR-100 datasets show that our method obtains the state-of-the-art pruned accuracy (i.e. 93.97% on VGG16, CIFAR-10 task) without retraining. 
+            Experiments using DNN, VGG-Net and WRN28X10 on MNIST, CIFAR-10 and CIFAR-100 datasets demonstrate our method performs 
+            structured directional pruning, reaching the same minimum valley as the optimizer.</p>
+            </div>
+
+        <p><strong>Related Publications:</strong><br></p>
+        <p>
+        <li>Structured Directional Pruning via Perturbation Orthogonal Projection
+        <br>
+        Xiaofeng Liu*, <strong>Yinchuan Li*</strong>, Yunfeng Shao, Qing Wang, Yanhui Geng
+        <br>
+        <em>submitted to IEEE Transactions on Neural Networks and Learning Systems</em> | <a style="color: #447ec9" href="https://arxiv.org/pdf/2107.05328.pdf">paper</a>
+        </p>
+        <p>
+        <li>Compressive Multidimensional Harmonic Retrieval with Prior Knowledge <a style="color: #447ec9">[Excellent Paper Award]</a>
+        <br>
+        <strong>Yinchuan Li</strong>, Xu Zhang, Zegang Ding, Xiaodong Wang
+        <br>
+        <em>IEEE International Conference on Signal, Information and Data Processing</em> 2019 | <a style="color: #447ec9" href="https://arxiv.org/pdf/1904.11404">paper</a>
+        </p>
+        <p>
+        <li>Multidimensional Spectral Super-Resolution With Prior Knowledge With Application to High Mobility Channel Estimation
+        <br>
+        <strong>Yinchuan Li</strong>, Xiaodong Wang, Zegang Ding
+        <br>
+        <em>IEEE Journal on Selected Areas in Communications, 2019</em> | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/9131691">paper</a>
+        </p>
+
+
+        <h3 class="w3-center">AI for Finance</h3>
+        
+        <div class="w3-row">
+                <!-- <img src="S2RL.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
+                    width="333" height="200"> -->
+                <img class='image-box' src="FinRL.jpg">
+            <!-- Hide this text on small devices -->
+            <div>
+        <!-- <p class="w3-center"><em>I love photography</em></p> -->
+        <p style='text-align:justify'>AI massively reduces the cost of prediction, while cheap prediction is directly applicable to finance and envisioned to have a huge impact.
+
+We apply algorithms and softwares developped in AI, including OpenAI, TensorFlow, PyTorch, Keras; LSTM, DQN, DDPG, PPO, A2C, SAC, etc., to quantitative trading.
+
+We also design deep learning and deep reinforcement learning (DRL) algorithms, e.g., quantum tensor networks, quantum reinforcement learning, etc.  Exploiting the notion of differential privacy, we build more robust models or ensemble strategies;  We develop a deep reinforcement learning library FinRL for finance.
+
+Scholar data and ESG data as alternative data, we propose a practical machine learning approach and develop trading strategy to capture the scholar data or ESG data driven alpha.</p>
+
+
+<p><li>We develop a reinforcement learning system for financial stock investment from scratch for Santé Ventures, USA. Helping companies get higher returns when trading stocks.</p>
+
+
+<p><li>Our research on reinforcement learning eventually developed into FinRL (<a href="https://github.com/AI4Finance-Foundation/FinRL">website</a>), 
+which is the first open-source project to explore the great potential of deep reinforcement learning in finance. FinRL is featured in the Github Trending list!</p>
+
+
+            </div>
+
+        <p><strong>Related Publications:</strong><br></p>
+        <p>
+        <li>Optimistic Bull or Pessimistic Bear: Adaptive Deep Reinforcement Learning for Stock Portfolio Allocation
+        <br>
+        Xinyi Li*, <strong>Yinchuan Li*</strong>, Yuancheng Zhan, Xiao-Yang Liu
+        <br>
+        <em>ICML Workshop on AI in Finance</em> 2019 | <a style="color: #447ec9" href="https://arxiv.org/pdf/1907.01503.pdf">paper</a>
+        </p>
+        <p>
+        <li>Risk management via anomaly circumvent: Mnemonic deep learning for midterm stock prediction
+        <br>
+        Xinyi Li*, <strong>Yinchuan Li*</strong>, Xiao-Yang Liu, Christina Dan Wang
+        <br>
+        <em>SIGKDD Workshop on Anomaly Detection in Finance</em> 2019 | <a style="color: #447ec9" href="https://arxiv.org/pdf/1908.01112.pdf">paper</a>
+        </p>
+        <p>
+        <li>DP-LSTM: Differential Privacy-inspired LSTM for Stock Prediction Using Financial News
+        <br>
+        Xinyi Li, <strong>Yinchuan Li</strong>, Hongyang Yang, Liuqing Yang, Xiao-Yang Liu
+        <br>
+        <em>NeurIPS Workshop on Robust AI in Financial Services</em> 2019 | <a style="color: #447ec9" href="https://arxiv.org/pdf/1912.10806.pdf">paper</a>
+        </p>
+        <p>
+        <li>Price prediction of cryptocurrency: an empirical study
+        <br>
+        Liuqing Yang, Xiao-Yang Liu, Xinyi Li, <strong>Yinchuan Li</strong>
+        <br>
+        <em>International Conference on Smart Blockchain</em> 2019 | <a style="color: #447ec9" href="https://link.springer.com/chapter/10.1007/978-3-030-34083-4_13">paper</a>
+        </p>
+
+
+
+        <h3 class="w3-center">Deep Learning for Signal Processing</h3>
+        
+
+        <!-- <p class="w3-center"><em>I love photography</em></p> -->
+        <p style='text-align:justify'> Complex ADMM-Net, a complex-valued neural network
+architecture inspired by the alternating direction method
+of multipliers (ADMM), is designed for interference removal
+in stepped-frequency radar super-resolution angle-range-doppler
+imaging.We consider an uncooperative spectrum sharing scenario
+where the radar is tasked with imaging a sparse scene amidst communication
+interference that is frequency-sparse due to spectrum
+under utilization, motivating an L1-minimization problem to recover
+the radar image and suppress the interference. The problem's
+ADMM iteration under girds the neural network design, yielding a
+set of generalized ADMM updates with learnable hyperparameters
+and operations. The network is trained with random data generated
+according to the radar and communication signal models. In
+numerical experiments ADMM-Net exhibits markedly lower error
+and computational cost than ADMM and CVX.</p>
+
+
+        <p><strong>Related Publications:</strong><br></p>
+        <p>
+        <li>ADMM-Net for Communication Interference Removal in Stepped-Frequency Radar
+        <br>
+        Jeremy Johnston, <strong>Yinchuan Li<sup>&#8224</sup></strong>, Marco Lops, Xiaodong Wang
+        <br>
+        <em>IEEE Transactions on Signal Processing, 2020</em> | <a style="color: #447ec9" href="https://arxiv.org/pdf/2009.12651.pdf">paper</a>
+        </p>
+        <p>
+        <li>SAR parametric super-resolution image reconstruction methods based on ADMM and deep neural network
+        <br>
+        Yangkai Wei, <strong>Yinchuan Li</strong>, Zegang Ding, Yan Wang, Tao Zeng, Teng Long
+        <br>
+        <em>IEEE Transactions on Geoscience and Remote Sensing, 2020</em> | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/9340592">paper</a>
+        </p>
+        <p>
+        <li>Unfolded Deep Neural Network (UDNN) for High Mobility Channel Estimation
+        <br>
+        <strong>Yinchuan Li</strong>, Xiaodong Wang, Robert L Olesen
+        <br>
+        <em>IEEE Wireless Communications and Networking Conference (WCNC)</em> 2021 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/9417560/">paper</a>
+        </p>
+
+
+
+        <h3 class="w3-center">Machine Learning for Signal Processing</h3>
+        
+
+        <!-- <p class="w3-center"><em>I love photography</em></p> -->
+        <p style='text-align:justify'> In this paper, we consider an un-cooperative spectrum
+sharing scenario, where a radar system is to be overlaid
+to a pre-existing wireless communication system. Given the
+order of magnitude of the transmitted powers in play, we focus
+on the issue of interference mitigation at the communication
+receiver. We explicitly account for the reverberation produced
+by the (typically high-power) radar transmitter whose signal
+hits scattering centers (whether targets or clutter) producing
+interference onto the communication receiver, which is assumed
+to operate in an un-synchronized and un-coordinated scenario.
+We first show that the receiver design amounts to solve a
+joint (non-convex) interference removal and data demodulation
+problem. Next, we introduce two algorithms exploiting sparsity
+of a proper representation of the interference and the vector containing
+demodulation errors of the data block. The first algorithm
+is basically a relaxed constrained atomic norm minimization,
+while the latter relies on a two-stage processing structure and is based on alternating minimization. 
+The merits of these algorithms are demonstrated through extensive simulations; interestingly, the two-stage alternating 
+minimization algorithm turns out to achieve satisfactory performance with moderate computational complexity.</p>
+
+
+        <p><strong>Related Publications:</strong><br></p>
+        <p>
+        <li>Interference removal for radar/communication co-existence: The random scattering case
+        <br>
+        <strong>Yinchuan Li</strong>, Le Zheng, Marco Lops, Xiaodong Wang
+        <br>
+        <em>IEEE Transactions on Wireless Communications, 2019</em> | <a style="color: #447ec9" href="https://arxiv.org/pdf/1902.03436.pdf">paper</a>
+        </p>
+        <p>
+        <li>Multi-target position and velocity estimation using OFDM communication signals
+        <br>
+        <strong>Yinchuan Li</strong>, Xiaodong Wang, Zegang Ding
+        <br>
+        <em>IEEE Transactions on Communications, 2019</em> | <a style="color: #447ec9" href="https://arxiv.org/pdf/1902.05654.pdf">paper</a>
+        </p>
+        <p>
+        <li>Spectrum recovery for clutter removal in penetrating radar imaging
+        <br>
+        <strong>Yinchuan Li</strong>, Xiaodong Wang, Zegang Ding, Xu Zhang, Yin Xiang, Xiaopeng Yang
+        <br>
+        <em>IEEE Transactions on Geoscience and Remote Sensing, 2019</em> | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/8708969">paper</a>
+        </p>
+
+
+        </div>
+        
+        <!-- <p><em>I'm interested in artificial intelligence (e.g. reinforcement Learning, federated Learning, sparse learning) and its applications in signal processing and finance.<br></em></p><br> -->
+
+
+    </div>
+
+<!--con end-->
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"3","bdPos":"left","bdTop":"250"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/my.js"></script>
+</body>
+</html>
