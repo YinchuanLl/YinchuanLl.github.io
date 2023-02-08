@@ -110,7 +110,58 @@
 
     <div class="w3-content w3-container w3-padding-64">
 
-        <h3 class="w3-center">Federated Learning</h3>
+        <h3 class="w3-center">Generative Flow Network (GFlowNet)</h3>
+        
+        <div class="w3-row">
+                <!-- <img src="S2RL.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
+                    width="333" height="200"> -->
+                <img class='image-box' src="CFNframework.pdf">
+            <!-- Hide this text on small devices -->
+            <div>
+        <!-- <p class="w3-center"><em>I love photography</em></p> -->
+        <p style='text-align:justify'>Generative flow networks (GFlowNets), as an emerging technique, can be used as 
+		an alternative to reinforcement learning for exploratory control tasks. GFlowNets 
+		aims to sample actions with a probability proportional to the reward, similar to 
+		sampling different candidates in an active learning fashion. However, existing 
+		GFlowNets cannot adapt to continuous control tasks because GFlowNets need 
+		to form a DAG and compute the flow matching loss by traversing the inflows 
+		and outflows of each node in the trajectory. In this paper, we propose generative 
+		continuous flow networks (CFlowNets) that can be applied to continuous 
+		control tasks. First, we present the theoretical formulation of CFlowNets. Then, 
+		a training framework for CFlowNets is proposed, including the action selection 
+		process, the flow approximation algorithm, and the continuous flow matching loss 
+		function. Afterward, we theoretically prove the error bound of the flow approximation. 
+		The error decreases rapidly as the number of flow samples increases. 
+		Finally, experimental results on continuous control tasks demonstrate the performance 
+		advantages of CFlowNets compared to many reinforcement learning methods, especially regarding exploration ability.</p>
+            </div>
+
+        <p><strong>Related Publications:</strong><br>
+        <li>CFlowNets: Continuous Control with Generative Flow Networks
+        <br>
+        <strong>Yinchuan Li</strong>, Shuang Luo, Haozhi Wang, Jianye HAO
+        <br>
+        <em>ICLR</em> 2023 | <a style="color: #447ec9" href="https://openreview.net/forum?id=yAYHho4fATa&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2023%2FConference%2FAuthors%23your-submissions)">paper</a>
+        </p>
+        <p>
+        <li>DAG Matters! GFlowNets Enhanced Explainer for Graph Neural Networks
+        <br>
+        Wenqian Li, <strong>Yinchuan Li<sup>&#8224</sup></strong>, Zhigang Li, Jianye HAO, Yan Pang
+        <br>
+        <em>ICLR</em> 2023 | <a style="color: #447ec9" href="https://openreview.net/forum?id=jgmuRzM-sb6&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2023%2FConference%2FAuthors%23your-submissions)">paper</a>
+        </p>
+	<p>
+        <li>GFlowCausal: Generative Flow Networks for Causal Discovery
+        <br>
+        Wenqian Li*, <strong>Yinchuan Li*<sup>&#8224</sup></strong>, Shengyu Zhu, Yunfeng Shao, Jianye Hao, Yan Pang
+        <br>
+        <em>preprint</em> | <a style="color: #447ec9" href="https://arxiv.org/pdf/2210.08185.pdf">paper</a>
+        </p>
+
+        </div>
+	    
+	    
+	<h3 class="w3-center">Federated Learning</h3>
         
         <div class="w3-row">
                 <!-- <img src="S2RL.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
